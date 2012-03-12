@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="zh_cn" />
+	<!-- blueprint CSS framework -->
+	<link rel="stylesheet" type="text/css" href="css/screen.css" />
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/form.css" />
+	<link rel="stylesheet" type="text/css" href="css/mailuo.css" />
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-5.4.1-packed.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<title>人脉 - Site</title>
+	<style type="text/css">
+		input{padding: 0px;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin: 0px;outline: 0px;}
+	</style>
+	<script type="text/javascript">
+		var $CONFIG = {
+			domain : 'http://219.237.242.71',
+		};
+	</script>
+</head>
+ 
+<body>
+		<input type="hidden" id="baseUrl" value=""/>
+	<div class="top_public">
+		<div class='title_public clear'>
+				<div class='left'>
+					<p class='nlogo'>脉络</p>
+				</div>
+				<div class='right'>
+					<div class='top'> 
+						<span>Language :
+							<select name="language" id="language">
+                            <option value="english" selected="selected">English</option>
+                            <option value="zh_cn">中文</option>
+                            <option value="zh_tw">中國台語</option>
+                            </select>
+                         </span>
+                    </div>
+					<div class='center'></div>
+					<div class='bottom'>
+						<form action="/site/search" method="get">
+						<div class="cornerBg">
+							<div class="searchInput corner">
+								<input type="text" style="width:280px;height:35px;" onkeyup="AJAX_HINT.search(this)" class="auto_text"
+									value="Input keyword " name="name" autocomplete="off"/>
+							<div class="ajax_hint" style="display:none"></div>
+							</div>
+						</div>
+						<div class="searchBtn">
+							<input type="submit" value="Search " />
+							<input type="button" value="Advanced " />
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="body_index">
+				<div class="square">
+					<div class="nine_grid">
+						<ul>
+							<li id="namecard_1" >1</li>
+							<li id="namecard_2">
+								2							</li>
+							<li id="namecard_3">
+								3							</li>
+							<li id="namecard_4">
+								4							</li>
+							<li id="namecard_5">
+								5							</li>
+							<li id="namecard_6">
+								6							</li>
+							<li id="namecard_7">
+								7							</li>
+							<li id="namecard_8">
+								8							</li>
+							<li id="namecard_9">
+								9							</li>
+						</ul>
+					</div>
+					<div class="login">
+						<div class="">
+							<form id="login-form" action="/site/index" method="post">							<div class="row ">
+								<a class="registerD corner" href="/site/CreateAccount">Create Account </a>							</div>
+							<div class="row">
+								<input type="hidden" id="username_text" value="Username/Email/Phone"/>
+								<input id="username" name="LoginForm[username]" type="text" />															</div>
+						
+							<div class="row">
+								<input type="text" id="password_text" value="Password"/>
+								<input id="password" style="display:none" name="LoginForm[password]" type="password" />															</div>
+							<div class="row rememberMe">
+								<input id="ytLoginForm_rememberMe" type="hidden" value="0" name="LoginForm[rememberMe]" /><input checked="checked" name="LoginForm[rememberMe]" id="LoginForm_rememberMe" value="1" type="checkbox" />								<label for="LoginForm_rememberMe">Remember me next time</label>															</div>
+							<div class="row" style="height:100%;">
+								<div class="loginD corner">
+									<input id="loginBtn" type="submit" name="yt0" value="Login " />								</div>
+								<div class="findPwD">
+									<a href="/setting/ResetPwByProtect">Forgot Your Password </a>								</div>
+							</div>
+							</form>						</div><!-- end login -->
+						<div class="login_corp">
+							<div class="corpD"><div class="corpIcon "><img width="28px" height="28px" src="/images/connect/Linkedin.png" alt="" /></div><div class="corpLink corpBg_2"><a href="/connect/connectToLogin?connect_type=0">Linkedin Account Login</a></div></div><div class="corpD"><div class="corpIcon "><img width="28px" height="28px" src="/images/connect/Sina.png" alt="" /></div><div class="corpLink corpBg_1"><a href="/connect/connectToLogin?connect_type=1">Sina Weibo Account Login</a></div></div><div class="corpD"><div class="corpIcon "><img width="28px" height="28px" src="/images/connect/TencentWeibo.png" alt="" /></div><div class="corpLink corpBg_2"><a href="/connect/connectToLogin?connect_type=2">Tencent Weibo Account Login</a></div></div><div class="corpD"><div class="corpIcon "><img width="28px" height="28px" src="/images/connect/Renren.png" alt="" /></div><div class="corpLink corpBg_2"><a href="/connect/connectToLogin?connect_type=4">Renren Account Login</a></div></div><div class="corpD"><div class="corpIcon "><img width="28px" height="28px" src="/images/connect/QQ.png" alt="" /></div><div class="corpLink corpBg_1"><a href="/connect/connectToLogin?connect_type=5">Tencent QQ Account Login</a></div></div><div class="corpD"><div class="corpIcon "><img width="28px" height="28px" src="/images/connect/Kaixin.png" alt="" /></div><div class="corpLink corpBg_2"><a href="/connect/connectToLogin?connect_type=6">Kaixin Account Login</a></div></div><div class="corpD"><div class="corpIcon "><img width="28px" height="28px" src="/images/connect/NetEase.png" alt="" /></div><div class="corpLink corpBg_1"><a href="/connect/connectToLogin?connect_type=7">NetEase Account Login</a></div></div>						</div><!-- end login corp -->
+					</div>
+				</div><!-- end square -->
+				
+				<div class="useing" >
+					<div class="targBg">
+						<div class="targ corner">
+							These people also use 						</div>
+					</div>
+					<div class="list_carousel">
+						<ul id="foo1">
+							<li><a href="#"><img src="/upload/0/46/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/47/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/48/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/49/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/50/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/51/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/52/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/46/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/47/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/48/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/49/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/50/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/51/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/52/big.jpg" width="90px" height="90px"/></a></li>
+						</ul>
+						<div class="clearfix"></div>
+						<a id="foo1_prev" class="prev" href="#">&lt;</a>
+						<a id="foo1_next" class="next" href="#">&gt;</a>					</div>
+				</div><!--end usering -->
+				<div class="useing">
+					<div class="targBg">
+						<div class="targ corner">
+							These company also use 						</div>
+					</div>
+					<div class="list_carousel">
+						<ul id="foo2">
+							<li><a href="#"><img src="/upload/0/46/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/47/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/48/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/49/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/50/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/51/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/52/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/46/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/47/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/48/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/49/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/50/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/51/big.jpg" width="90px" height="90px"/></a></li>
+							<li><a href="#"><img src="/upload/0/52/big.jpg" width="90px" height="90px"/></a></li>
+						</ul>
+						<div class="clearfix"></div>
+						<a id="foo2_prev" class="prev" href="#">&lt;</a>
+						<a id="foo2_next" class="next" href="#">&gt;</a>					</div>
+				</div><!--end usering -->
+				<div id="footer">
+					<p>
+						<a href="javascript(0)">Help </a>
+						<a href="javascript(0)">Feedback </a>
+						<a href="javascript(0)">Dowload Iphone App </a>
+						<a href="javascript(0)">Dowload Android App </a>					</p>
+					<p>
+						Copyright &copy; 2012 by Index Informatics.<br/>
+						All Rights Reserved.<br/>
+					</p>
+				</div><!-- end footer -->
+			</div>
+		</div>
+</body>
+</html>
+
