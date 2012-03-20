@@ -1,6 +1,0 @@
-修改文件先 右键-tortoiseGgit-pull  
-
-修改后 先右键-commit 然后右键-tortoiseGgit-push
-修改文件先 右键-tortoiseGgit-pull  
-
-修改后 先右键-commit 然后右键-tortoiseGgit-push
